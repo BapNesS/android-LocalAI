@@ -1,0 +1,21 @@
+# IntelliJ IDEA
+.idea/*
+# But not these files...
+!.idea/codeStyles
+!.idea/runConfigurations
+
+# Gradle
+.gradle
+.gradle/*
+build
+local.properties
+
+# Mac OS
+.DS_Store
+
+# Android
+app/*.apk
+
+# Kotlin
+.kotlin
+*.salive

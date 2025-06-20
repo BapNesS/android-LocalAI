@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Local AI</string>
+    <string name="form_placeholder">Prompt</string>
+    <string name="form_button_request">Request</string>
+    <string name="metadata_source">Source: %s</string>
+    <string name="metadata_duration">Duration: %d (ms)</string>
+    <string name="copy_to_clipboard">Copy to clipboard</string>
+    <string name="copy_to_clipboard_done">Copied!</string>
+    <string name="share">Share</string>
+</resources>

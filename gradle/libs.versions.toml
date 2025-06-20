@@ -1,0 +1,47 @@
+[versions]
+activityCompose = "1.10.1"
+agp = "8.9.3"
+aicore = "0.0.1-exp02"
+composeBom = "2025.06.01"
+coreKtx = "1.16.0"
+espressoCore = "3.6.1"
+generativeai = "0.9.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+koin-bom = "3.5.6"
+kotlin = "2.1.20"
+lifecycleRuntimeKtx = "2.9.1"
+materialIconsExtended = "1.7.8"
+
+[libraries]
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3", version = "1.4.0-alpha16" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+google-aicore = { module = "com.google.ai.edge.aicore:aicore", version.ref = "aicore" }
+google-generativeai = { module = "com.google.ai.client.generativeai:generativeai", version.ref = "generativeai" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+koin-android = { module = "io.insert-koin:koin-android" }
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose" }
+koin-bom = { group = "io.insert-koin", name = "koin-bom", version.ref = "koin-bom" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
+[bundles]
+koin = [
+    "koin-android",
+    "koin-androidx-compose",
+]
